@@ -23,8 +23,8 @@ some useful commands
 
 https://www.postgresqltutorial.com/psql-commands/
 
-\c database-name
-\l
-\dt
-\d table-name
+\c database-name  
+\l  
+\dt  
+\d table-name  
 \i file-path-to-sql-command
