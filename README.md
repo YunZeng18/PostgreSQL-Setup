@@ -15,7 +15,7 @@ https://linuxhint.com/install_postgresql_-ubuntu/
    host all all 0.0.0.0/0 md5
 9. $ sudo ufw allow from any to any port 5432 proto tcp  
    make sure that the firewall does not stop incoming connections through the PostgreSQL port 5432
-10. $ sudo -i -u postgres
+10. add a local user $ sudo -i -u postgres
 11. $ psql
 
 ## you are now in postgreSQL!
@@ -29,3 +29,4 @@ https://www.postgresqltutorial.com/psql-commands/
 \dt  
 \d table-name  
 \i file-path-to-sql-command
+exit
