@@ -17,9 +17,10 @@ https://linuxhint.com/install_postgresql_-ubuntu/
    make sure that the firewall does not stop incoming connections through the PostgreSQL port 5432
 10. $ sudo -i -u postgres
 11. $ psql
-    you are now in postgreSQL!
 
-some useful commands
+##you are now in postgreSQL!
+
+##some useful commands
 
 https://www.postgresqltutorial.com/psql-commands/
 
