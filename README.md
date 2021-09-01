@@ -18,9 +18,9 @@ https://linuxhint.com/install_postgresql_-ubuntu/
 10. $ sudo -i -u postgres
 11. $ psql
 
-##you are now in postgreSQL!
+## you are now in postgreSQL!
 
-##some useful commands
+## some useful commands
 
 https://www.postgresqltutorial.com/psql-commands/
 
