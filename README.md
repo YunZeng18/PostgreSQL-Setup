@@ -6,7 +6,7 @@ https://linuxhint.com/install_postgresql_-ubuntu/
 2. $ sudo apt upgrade
 3. $ sudo apt install postgresql
 4. optional: check default port 5432 $ ss -nlt
-5. optional: startup settings of the PostgreSQL Server after system boot-up $ sudo systemctl disable postgresql
+5. optional: disable/enable startup settings of the PostgreSQL Server after system boot-up $ sudo systemctl disable postgresql
 6. $ sudo gedit /etc/postgresql/12/main/postgresql.conf  
    change listen_addresses = ‘localhost’ to listen_addresses = ‘\*’
 7. $ sudo systemctl restart postgresql
@@ -30,3 +30,10 @@ https://www.postgresqltutorial.com/psql-commands/
 \d table-name  
 \i file-path-to-sql-command
 exit
+
+## remove postgreSQL
+
+https://askubuntu.com/questions/32730/how-to-remove-postgres-from-my-installation
+
+1. get the list of packages $ dpkg -l | grep postgres
+2. separate the package name by space $ sudo apt-get --purge remove postgresql postgresql-12 postgresql-client-12 postgresql-client-common postgresql-common
